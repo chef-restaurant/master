@@ -1,0 +1,22 @@
+.btn-violet{
+    height: 60px;
+    background-color: $color-green;
+    padding: 15px 20px 20px;
+    line-height: 30px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    color: $color_white_text;
+
+    &:hover {
+        color: $color_gray;
+    }
+
+    .arrow{
+        margin-left: 15px;
+    }
+}  
+
+.btn-bar{
+    margin-top: 25px;
+    display: inline-block;
+}

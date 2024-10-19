@@ -1,0 +1,18 @@
+header{
+    position: sticky;
+    top: 25px;
+    z-index: 10;
+}
+.navbar{
+    height: 80px;
+    background-color: $color_white;
+    margin-top: 30px;
+
+    .nav-item{
+        padding: 0 15px;
+
+        .nav-link{
+            color: $color_green;
+        }
+    }
+}

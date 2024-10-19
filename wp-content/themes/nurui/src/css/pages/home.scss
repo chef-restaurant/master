@@ -1,0 +1,185 @@
+.home{
+    
+    .description{
+        margin-top: 40px;
+        position: relative;
+        &_swap{
+            margin-bottom: 60px;
+            height: 100%;
+        }
+
+        &_detail{
+            padding-right: 80px;
+            .title{
+                margin-bottom: 20px;
+            }
+            .content{
+                font-size: 20px;
+            }
+            .cover{
+                position: relative;
+                top:20%;
+            }
+        }
+
+        .pictures{
+            img{
+                width: 100%;
+            }
+
+            .frame-b{
+                margin-bottom: 30px;
+            }
+
+            .frame-c{
+                width: 70%;
+            }
+        }
+
+        .line-beauty{
+            position: absolute;
+            bottom: 60px;
+            left: -100px;
+        }
+    }
+
+    .carousel-brand{
+        font-size: 20px;
+        padding: 30px 0;
+    }
+
+    .description-second{
+        padding: 90px 0;
+        .description_detail{
+            .title{
+                margin-bottom: 20px;
+            }
+
+        }
+        .pictures{
+            img{
+                width: 80%;
+            }
+        }
+    }
+
+    .solution{
+        text-align: center;
+        padding: 90px 0;
+        &_sub-title{
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 2px;
+        }
+        &_title{
+            margin: 35px auto ;
+            width: 80%;
+
+        }
+
+        .service{
+            padding: 0;
+
+            .block-cover{
+                text-align: center;
+                padding: 100px 30px;
+                .image{
+                    width: 50%;
+                    height: 250px;
+                    margin-bottom: 50px;
+                }
+                .title{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+    }
+
+    .how_we_do_it{
+        padding: 90px 0;
+    }
+    .inclusive{
+        background-color: $color_grayd8;
+        padding: 90px 0;
+        .description{
+            margin-top: 0;
+            margin-bottom: 60px;
+            width: 50%;
+        }
+        
+        .some-info{
+            position: relative;
+            .card-violet{
+                position: relative;
+                border-bottom: 8px solid;
+                padding: 50px;
+                .topic{
+                    font-size: 90px;
+                }
+                .subscribe{
+                    width: 70%;
+                }
+            }
+
+            .card-blue{
+                background-color: $color_sky;
+                border-bottom-color: $color_green;
+            }
+
+            .card-yellow{
+                background-color: $color_light_brow;
+                border-bottom-color: $color_brow;
+
+            }
+
+            .card-pink{
+                background-color: $color_pink_light;
+                border-bottom-color: $color_pink_dark;
+                color: $color_white_text;
+
+            }
+
+            .card-green{
+                background-color: $color_green;
+                border-bottom-color: $color_sky;
+                color: $color_white_text;
+
+            }
+
+            .card-b{
+                width: 60%;
+                margin-left: auto;
+                margin-top: 40px;
+            }
+
+            .card-c{
+                width: 60%;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-top: -60px;
+            }
+
+            .line-beauty{
+                position: absolute;
+                top: -255px;
+                right: 40px;
+            }
+        }
+        
+    }
+
+    .carousel-blog{
+        background-color: $color_grayd8;
+        padding: 80px 0;
+    }
+    .press{
+        padding: 90px 0;
+        text-align: center;
+    }
+    .support-patients{
+        padding: 100px;
+        text-align: center;
+
+    }
+}
