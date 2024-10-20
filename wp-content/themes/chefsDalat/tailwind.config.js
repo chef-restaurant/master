@@ -2,12 +2,13 @@
 module.exports = {
   content: [
     "./dist/**/*.{html,js}",
+    "./dist/**/*.css",
     './**/*.php',
     './src/**/*.js',
     './src/**/*.js',
     './src/**/*.php',
-    './src/**/*.html',  
-    './src/**/*.scss',  // If you use SCSS or CSS files
+    './src/**/*.html',
+    './src/**/*.scss',
   ],
   theme: {
     extend: {},

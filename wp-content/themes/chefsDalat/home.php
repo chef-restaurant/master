@@ -1,7 +1,7 @@
 <?php 
     get_header();
 ?>
-<section class="description bg-green">
+<section class="description">
     <div class="container">
         <div class="row description_swap">
             <div class="col-xl-5 description_detail">
@@ -38,7 +38,7 @@
     
 </section>
 
-<section class="description-second bg-green">
+<section class="description-second bg-blue-950 text-red-400">
     <div class="container">
         <div class="row description_swap">
             <div class="col-xl-6 description_detail">
