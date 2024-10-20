@@ -1,4 +1,3 @@
-import "bootstrap";
 import "jquery";
 import "slick-carousel";
 function addClassPageName(){

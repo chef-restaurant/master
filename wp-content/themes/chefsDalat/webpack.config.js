@@ -1,64 +1,76 @@
 const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
     module: {
         rules: [
-        {
-            test: /\.js$/,
-            include: [path.resolve(__dirname, 'src')],
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-        },
-        {
-            test: /\.(scss|css)$/,
-            use: [
-                MiniCssExtractPlugin.loader,
-                {
-                    loader: 'css-loader',
-                    options: {
-                        sourceMap: true
+            {
+                test: /\.js$/,
+                include: [path.resolve(__dirname, 'src')],
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+            },
+            {
+                test: /\.(scss|css)$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    require('tailwindcss'),
+                                    require('autoprefixer'),
+                                ],
+                            },
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                        }
                     }
-                },
-                {
-                    loader: 'sass-loader',
+                ]
+            },
+            {
+                test: /\.(png|jpg|gif|svg)$/,
+                exclude: [/fonts/],
+                use: [{
+                    loader: 'file-loader',
                     options: {
-                        sourceMap: true,
-                    }
-                }
-            ]
-        },
-        {
-            test: /\.(png|jpg|gif|svg)$/,
-            exclude: [/fonts/],
-            use: [{
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]?[hash]',
-                    outputPath: "images",
-                    publicPath: "images"
-                },
-            }],
+                        name: '[name].[ext]?[hash]',
+                        outputPath: "images",
+                        publicPath: "images"
+                    },
+                }],
 
-        }, 
-        { 
-            test: /\.(eot|ttf|woff|woff2|otf)$/, 
-            use: [
-                {
-                  loader: 'file-loader',
-                  options: {
-                    name: '[name].[ext]',
-                    outputPath: 'fonts/'
-                  }
-                }
-              ]
-        }
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2|otf)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
+                ]
+            }
         ]
     },
     resolve: {
         alias: {
             'jquery.validation': 'jquery-validation/dist/jquery.validate.js',
-            './fonts' : path.resolve(__dirname, "./src/fonts/")
+            './fonts': path.resolve(__dirname, "./src/fonts/")
         },
     },
     entry: {
