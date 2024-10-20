@@ -1,0 +1,237 @@
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/css/app.scss ***!
+  \*******************************************************************************************************************************************************************/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #e5e8eb;
+  font-family: "Oxygen", sans-serif;
+  color: #134a45;
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+}
+
+.bg-light {
+  background-color: #ccc6cc;
+  color: #134a45;
+}
+
+.bg-green {
+  background-color: #134a45;
+  color: #cfd4c8;
+}
+
+.bg-blue {
+  background-color: #96c9e9;
+}
+
+.bg-pink {
+  background-color: #b961cd;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 58px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+.container {
+  max-width: 1380px !important;
+}
+
+.btn-violet {
+  height: 60px;
+  background-color: #134a45;
+  padding: 15px 20px 20px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: #cfd4c8;
+}
+.btn-violet:hover {
+  color: #e5e8eb;
+}
+.btn-violet .arrow {
+  margin-left: 15px;
+}
+
+.btn-bar {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.check {
+  font-family: "brolimo blod";
+}
+
+@font-face {
+  font-family: "brolimo";
+  src: url(a67a41b1e696a431df25.otf) format("opentype");
+}
+@font-face {
+  font-family: "brolimo blod";
+  src: url(4739d9844512b39dbfc9.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url(3bec88683893f841834d.ttf);
+}
+.home .description {
+  margin-top: 40px;
+  position: relative;
+}
+.home .description_swap {
+  margin-bottom: 60px;
+  height: 100%;
+}
+.home .description_detail {
+  padding-right: 80px;
+}
+.home .description_detail .title {
+  margin-bottom: 20px;
+}
+.home .description_detail .content {
+  font-size: 20px;
+}
+.home .description_detail .cover {
+  position: relative;
+  top: 20%;
+}
+.home .description .pictures img {
+  width: 100%;
+}
+.home .description .pictures .frame-b {
+  margin-bottom: 30px;
+}
+.home .description .pictures .frame-c {
+  width: 70%;
+}
+.home .description .line-beauty {
+  position: absolute;
+  bottom: 60px;
+  left: -100px;
+}
+.home .carousel-brand {
+  font-size: 20px;
+  padding: 30px 0;
+}
+.home .description-second {
+  padding: 90px 0;
+}
+.home .description-second .description_detail .title {
+  margin-bottom: 20px;
+}
+.home .description-second .pictures img {
+  width: 80%;
+}
+.home .solution {
+  text-align: center;
+  padding: 90px 0;
+}
+.home .solution_sub-title {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+.home .solution_title {
+  margin: 35px auto;
+  width: 80%;
+}
+.home .solution .service {
+  padding: 0;
+}
+.home .solution .service .block-cover {
+  text-align: center;
+  padding: 100px 30px;
+}
+.home .solution .service .block-cover .image {
+  width: 50%;
+  height: 250px;
+  margin-bottom: 50px;
+}
+.home .solution .service .block-cover .title {
+  margin-bottom: 20px;
+}
+.home .how_we_do_it {
+  padding: 90px 0;
+}
+.home .inclusive {
+  background-color: #cfd4d8;
+  padding: 90px 0;
+}
+.home .inclusive .description {
+  margin-top: 0;
+  margin-bottom: 60px;
+  width: 50%;
+}
+.home .inclusive .some-info {
+  position: relative;
+}
+.home .inclusive .some-info .card-violet {
+  position: relative;
+  border-bottom: 8px solid;
+  padding: 50px;
+}
+.home .inclusive .some-info .card-violet .topic {
+  font-size: 90px;
+}
+.home .inclusive .some-info .card-violet .subscribe {
+  width: 70%;
+}
+.home .inclusive .some-info .card-blue {
+  background-color: #96c9e9;
+  border-bottom-color: #134a45;
+}
+.home .inclusive .some-info .card-yellow {
+  background-color: #d0c2bb;
+  border-bottom-color: #b8a086;
+}
+.home .inclusive .some-info .card-pink {
+  background-color: #b961cd;
+  border-bottom-color: #7f3490;
+  color: #cfd4c8;
+}
+.home .inclusive .some-info .card-green {
+  background-color: #134a45;
+  border-bottom-color: #96c9e9;
+  color: #cfd4c8;
+}
+.home .inclusive .some-info .card-b {
+  width: 60%;
+  margin-left: auto;
+  margin-top: 40px;
+}
+.home .inclusive .some-info .card-c {
+  width: 60%;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-top: -60px;
+}
+.home .inclusive .some-info .line-beauty {
+  position: absolute;
+  top: -255px;
+  right: 40px;
+}
+.home .carousel-blog {
+  background-color: #cfd4d8;
+  padding: 80px 0;
+}
+.home .press {
+  padding: 90px 0;
+  text-align: center;
+}
+.home .support-patients {
+  padding: 100px;
+  text-align: center;
+}

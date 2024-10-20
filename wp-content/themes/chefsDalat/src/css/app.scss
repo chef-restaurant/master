@@ -1,0 +1,16 @@
+//third party
+// @import "~bootstrap";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//file import
+@import "variables.scss";
+@import "buttons.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "fonts.scss";
+
+//pages
+@import "./pages/home.scss";
+
