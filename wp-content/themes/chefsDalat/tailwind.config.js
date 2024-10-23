@@ -11,6 +11,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      transparent: 'transparent',
+      'green': '#1F3400',
+      'white': "#ffffff",
+      'orange': "#DDD2BF"
+    }
   },
   plugins: [],
 }

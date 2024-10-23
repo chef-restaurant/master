@@ -46,9 +46,8 @@ module.exports = {
                 use: [{
                     loader: 'file-loader',
                     options: {
-                        name: '[name].[ext]?[hash]',
-                        outputPath: "images",
-                        publicPath: "images"
+                        name: '[name].[ext]',
+                        outputPath: "images/",
                     },
                 }],
 
@@ -70,7 +69,8 @@ module.exports = {
     resolve: {
         alias: {
             'jquery.validation': 'jquery-validation/dist/jquery.validate.js',
-            './fonts': path.resolve(__dirname, "./src/fonts/")
+            './fonts': path.resolve(__dirname, "./src/fonts/"),
+            './images': path.resolve(__dirname, "./assets/"),
         },
     },
     entry: {

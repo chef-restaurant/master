@@ -7,5 +7,16 @@ function ConfigurePage(){
     addClassPageName();
 }
 
-console.log("asdasd")
+function menuToggle(){
+    if($("#main-menu").hasClass("collaped")){
+        $("#main-menu").removeClass("collaped");
+    } else{
+        $("#main-menu").addClass("collaped");
+    }
+}
+
+$("#menuBtn").on("click", () =>{
+    menuToggle()
+})
+
 export default ConfigurePage;
