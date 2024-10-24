@@ -1,0 +1,22 @@
+footer{
+
+    .social{
+         .social-icon{
+             width: 45px;
+             height: 45px;
+             line-height: 45px;
+             margin-right: 30px;
+             align-self: center;
+         }
+
+         a.social-icon{
+            width: 100px !important;
+         }
+    }
+
+    .footer-logo{
+        img {
+            height: 80px;
+        }
+    }
+}

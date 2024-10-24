@@ -20,42 +20,44 @@
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
         <!-- Add the slick-theme.css if you want default styling -->
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body <?php body_class(); ?>>
-    <header>
-        <section class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="<?php echo THEME . "/assets/logo.png"?>" alt="">
+    <header class=" bg-green mx-auto sticky top-0 z-10 text-white drop-shadow-xl ">
+        <section class=" mx-auto p-6 flex-nowrap grid grid-cols-3 drop-shadow-xl ">
+            <div class="menu">
+                <button id="menuBtn" class="text-5xl forcus:outline-none ">&#9776</button>
+            </div>
+            <div class="logo text-center tracking-[8px] relative block">
+                <div class=" absolute">
+                    <a href="/" class="block w-1/2 mx-auto">
+                        <img class="" src="<?php echo THEME . "/assets/logo.png"?>"/>
+                        <div class=" mt-[-20px] p-8 pt-[10px] rounded-es-[50%] rounded-ee-[50%] ">
+                            <br>
+                            <span class="">FARM TO TABLE</span>
+                        </div>
+                        <div class=" oval bg-green w-1/2 h-[100%] absolute rounded-[100%] -z-10 top-[5px] "></div>
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">what we do</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Out customers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Blog</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                    </div>
+                    
                 </div>
-            </nav>
+                
+            </div>
+            <div class="block relative text-end">
+                <button id="menuBtn" class="text-5xl forcus:outline-none ">RESERVATION</button>
+            </div>
         </section>
-        <h1 class="check bg-gray-200">CHEFS DALAT</h1>
+        
+        <nav id="main-menu" class="menu absolute bg-orange w-screen text-center pt-[60px] -z-50 pb-[30px] collaped">
+            <section class="contact"></section>
+            
+            <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary', 
+                    'menu_class' => 'chefs-menu', 
+                )); 
+            ?> 
+        </nav>
+
     </header>
 <?php
 wp_body_open();

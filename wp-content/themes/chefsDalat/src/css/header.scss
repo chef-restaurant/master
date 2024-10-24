@@ -1,3 +1,40 @@
-.check{
-    font-family: "brolimo blod";
+.header{
+
+}
+
+.menu{
+    .chefs-menu{
+        .menu-item{
+            border-top: 1px solid $clr_brow;
+            max-width: 30%;
+            margin: auto;
+            padding: 10px 0;
+            a{
+                color: $clr_000;
+                padding: 0 5px;
+                min-width: 40%;;
+            }
+
+            &:hover{
+                border-top: 3px solid $clr_brow;
+                border-bottom: 2px solid $clr_brow;
+                &::after{
+                    content: "";
+                    background-image: url("./images/fork.png");
+                    width: 10px;
+                }
+
+
+
+            }
+
+            &.current-menu-item a{
+                color: $clr_brow;
+            }
+        }
+    }
+}
+
+.collaped{
+    display: none;
 }

@@ -16,11 +16,14 @@ $color_pink_light: #b961cd;
 $color_pink_dark:#7f3490;
 $color_white:#ffffff;
 $color_white_text:#cfd4c8;
-$color_light_brow:#d0c2bb;
-$color_brow:#b8a086;
 
 
-$clr_AF7727 : #AF7727;
+$font_brolimo : "brolimo";
+$font_brolimoBold : "brolimo blod";
+
+$clr_light_brow:#DDD2BF;
+$clr_brow:#AF7727;
+// $clr_AF7727 : #AF7727;
 $clr_1F3400: #1F3400;
 $clr_000: #000;
 $clr_DDD2BF: #DDD2BF;
@@ -29,8 +32,7 @@ $clr_DDD2BF: #DDD2BF;
 
 body{
     background-color: $color_gray;
-    font-family: 'Oxygen', sans-serif;
-    color: $color_green;
+    font-family: $font_brolimo, sans-serif;
     font-size: $fs16;
 }
 
@@ -43,10 +45,10 @@ a{
     color: $color_green;
 }
 
-.bg-green {
-    background-color: $color_green ;
-    color: $color_white_text;
-}
+// .bg-green {
+//     background-color: $color_green ;
+//     color: $color_white_text;
+// }
 
 .bg-blue{
     background-color:$color_sky;

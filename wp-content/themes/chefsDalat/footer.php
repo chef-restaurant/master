@@ -1,52 +1,37 @@
-<footer>
-	<section class="information">
-        <div class="container ">
-            <div class="row information_swap">
-                <div class="col-xl-6">
-                     <h3 class="title">Get our newsletter.</h3>
-                     <p class="content">
-                     Violet's health equity newsletter includes the latest industry news, cultural competence education, and company updates.
-                     </p>
-
-                     <a class="btn-violet bg-pink">Subscribe <i class="fab arrow-right"></i></a>
-                </div>
-                <div class="col-xl-6">
-                    <div class="blog">
-                        Blog
-                    </div>
-                </div>
-            </div>
-            <hr/>
+<footer class="bg-orange ">
+    <section class=" mx-auto p-6 flex flex-nowrap grid grid-cols-3 drop-shadow-xl "> 
+        <div class="social flex flex-nowrap">
+            <a href="#followUs" class="block social-icon"> FOLLOW US</a>
+            <img class="social-icon" src="<?php echo THEME . "/assets/facebook.png"?>" />
+            <img class="social-icon" src="<?php echo THEME . "/assets/instagram.png"?>" />
+            <img class="social-icon" src="<?php echo THEME . "/assets/social-owl.png"?>" />
+            <img class="social-icon" src="<?php echo THEME . "/assets/google.png"?>" />
         </div>
-
-    </section>
-
-    <section class="footer_info">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 contact_us">
-                     <h3 class="title">Get our newsletter.</h3>
-                     <p class="content">
-                     Violet's health equity newsletter includes the latest industry news, cultural competence education, and company updates.
-                     </p>
-
-                </div>
-                <div class="col-xl-6">
-                    <div class="col-xl-3 icon_social">
-
-                    </div>
-                    <div class="col-xl-3 page"></div>
-                    <div class="col-xl-3 page"></div>
-                    <div class="col-xl-3 page"></div>
-                </div>
+        <div class="footer-logo text-center">
+            <a class="block" href="http://" target="_blank" rel="noopener noreferrer">
+                <img class="inline-block " src="<?php echo THEME . "/assets/footer-logo.png"?>" />
+            </a>
+        </div>
+        <div class="contact-points grid grid-rows-2 ml-10">
+            <div class="location flex flex-nowrap">
+                <i class="fa-solid fa-location-dot mr-4 self-center"></i> 
+                <?php if(is_active_sidebar('chefs-map')) : ?>
+                        <?php dynamic_sidebar('chefs-map'); ?>
+                <?php endif; ?>
+            </div>
+            <div class="phone flex flex-nowrap">
+                <i class="fa-solid fa-phone mr-4 self-center"></i>
+                <?php if(is_active_sidebar('chefs-phone-number')) : ?>
+                        <?php dynamic_sidebar('chefs-phone-number'); ?>
+                <?php endif; ?>
             </div>
         </div>
-
     </section>
 </footer>
 
 <?php wp_footer(); ?>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-<script src="<?php echo THEME . "/dist/app.js"?>"></script>
+<script src="<?php echo THEME . "/dist/app.js" ?>"></script>
 </body>
+
 </html>
